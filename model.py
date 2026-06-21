@@ -157,8 +157,13 @@ def array_exp(arr):
     # TODO: apply elementwise exponential to arr and return the result
     return np.array([np.exp(i)if np.isscalar(i) else array_exp(i) for i in arr ])
 
-# Step 22 - array_log (not yet solved)
-# TODO: implement
+# Step 22 - array_log
+import numpy as np
+
+def array_log(arr):
+    """Return the elementwise natural log of arr (assumes arr > 0)."""
+    # TODO: apply elementwise natural log to arr and return the result
+    return np.array([np.log(i) if np.isscalar(i) else array_log(i) for i in arr ])
 
 # Step 23 - sum_all (not yet solved)
 # TODO: implement
