@@ -117,8 +117,13 @@ def slice_subblock(arr, r0, r1, c0, c1):
         return np.zeros((0,c1 - c0))
     return np.array([row[c0:c1] for row in arr[r0:r1]])
 
-# Step 17 - elementwise_add (not yet solved)
-# TODO: implement
+# Step 17 - elementwise_add
+import numpy as np
+
+def elementwise_add(a, b):
+    """Return the elementwise sum of two same-shape arrays."""
+    # TODO: return a new array whose entries are the pairwise sums of a and b
+    return a + b
 
 # Step 18 - elementwise_multiply (not yet solved)
 # TODO: implement
