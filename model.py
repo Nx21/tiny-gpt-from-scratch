@@ -108,8 +108,14 @@ def slice_column(arr, j):
     # TODO: index into arr to extract the j-th column as a 1D array.
     return np.array([row[j] for row in arr])
 
-# Step 16 - slice_subblock (not yet solved)
-# TODO: implement
+# Step 16 - slice_subblock
+import numpy as np
+
+def slice_subblock(arr, r0, r1, c0, c1):
+    """Return the sub-block arr[r0:r1, c0:c1] of a 2D array."""
+    if r0 == r1:
+        return np.zeros((0,c1 -c0))
+    return np.array([row[c0:c1] for row in arr[r0:r1]])
 
 # Step 17 - elementwise_add (not yet solved)
 # TODO: implement
