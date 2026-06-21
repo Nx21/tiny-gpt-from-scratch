@@ -149,8 +149,13 @@ def vector_matrix_broadcast_add(matrix, vector):
     # TODO: return matrix + vector broadcast across rows
     return np.array([i + vector for i in matrix])
 
-# Step 21 - array_exp (not yet solved)
-# TODO: implement
+# Step 21 - array_exp
+import numpy as np
+
+def array_exp(arr):
+    """Return the elementwise exponential of arr."""
+    # TODO: apply elementwise exponential to arr and return the result
+    return np.array([np.exp(i)if np.isscalar(i) else array_exp(i) for i in arr ])
 
 # Step 22 - array_log (not yet solved)
 # TODO: implement
