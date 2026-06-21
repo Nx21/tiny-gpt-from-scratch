@@ -106,7 +106,7 @@ import numpy as np
 def slice_column(arr, j):
     """Return column j of a 2D array as a 1D array of length R."""
     # TODO: index into arr to extract the j-th column as a 1D array.
-    return np.array([i[j] for i in arr])
+    return np.array([row[j] for row in arr])
 
 # Step 16 - slice_subblock (not yet solved)
 # TODO: implement
