@@ -165,8 +165,12 @@ def array_log(arr):
     # TODO: apply elementwise natural log to arr and return the result
     return np.array([np.log(i) if np.isscalar(i) else array_log(i) for i in arr ])
 
-# Step 23 - sum_all (not yet solved)
-# TODO: implement
+# Step 23 - sum_all
+import numpy as np
+
+def sum_all(arr):
+    """Return the sum of every element of arr as a scalar."""
+    return np.sum(arr)
 
 # Step 24 - sum_axis0 (not yet solved)
 # TODO: implement
