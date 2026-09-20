@@ -263,8 +263,10 @@ def read_text_file(text_blob):
         raise ValueError()
     return text_blob
 
-# Step 35 - encode_corpus_to_int_array (not yet solved)
-# TODO: implement
+# Step 35 - encode_corpus_to_int_array
+def encode_corpus_to_int_array(text, stoi):
+    """Convert the corpus string into a 1D NumPy int64 array of token ids."""
+    return np.array([stoi[i] for i in text])
 
 # Step 36 - pick_split_point (not yet solved)
 # TODO: implement
