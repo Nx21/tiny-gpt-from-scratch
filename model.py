@@ -254,8 +254,14 @@ def stable_softmax_2d_rowwise(logits):
     """Row-wise numerically stable softmax of a 2D logits array."""
     return np.array([stable_softmax_1d(i) for i in logits])
 
-# Step 34 - read_text_file (not yet solved)
-# TODO: implement
+# Step 34 - read_text_file
+def read_text_file(text_blob):
+    """Return text_blob unchanged after validating it is a non-empty string."""
+    if not isinstance(text_blob, str):
+        raise TypeError()
+    if not text_blob.strip():
+        raise ValueError()
+    return text_blob
 
 # Step 35 - encode_corpus_to_int_array (not yet solved)
 # TODO: implement
