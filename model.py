@@ -284,8 +284,12 @@ def pick_block_size(default_size):
     # TODO: return an integer block size, at least 1, derived from default_size
     return round(default_size) if  default_size >= 1 else 1
 
-# Step 39 - slice_x_at_offset (not yet solved)
-# TODO: implement
+# Step 39 - slice_x_at_offset
+import numpy as np
+
+def slice_x_at_offset(data, i, block_size):
+    """Return the input window data[i : i + block_size]."""
+    return data[i:i+block_size]
 
 # Step 40 - slice_y_at_offset (not yet solved)
 # TODO: implement
